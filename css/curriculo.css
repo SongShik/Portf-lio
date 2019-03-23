@@ -1,0 +1,62 @@
+
+/* topo*/
+#topo{
+  height: 80px;
+  width: 1000px; 
+  margin-left:  auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.bloco{
+  height: 80px;
+  width: 150px;
+  float: left;
+  padding-top: 25px;
+  margin-left:  100px;
+  margin-right: 50px; 
+
+}
+
+.bloco:hover{
+  color: #40e0d0;
+  cursor: pointer;
+}
+
+/*pdf*/
+.responsive-wrapper {
+  position: relative;
+  height: 0;    
+  -webkit-overflow-scrolling: touch;
+   overflow: auto;
+
+}
+ 
+.responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.tela-com-572x612 {
+  padding-bottom: 107%;
+}
+
+.borda {
+  margin: 30px;
+  padding: 20px;
+  border: 1px solid #4f4f4f;
+  box-shadow: 4px 4px 14px #4f4f4f;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1000px;
+  max-height: 100%; 
+  overflow: hidden;
+}
+
+

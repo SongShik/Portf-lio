@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+  
+    <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/index.css">
+  <script type="text/javascript" src="../jquery.js"></script>
+  
+  <!-- bootstrap-->
+  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../bootstrap/js/bootstrap.js">
+    <title>Song Shik</title>
+  </head>
+
+  <script>
+  $(function(){
+       //fazer uma imagem ou elemento sumir da tela com o tamanho do scroll
+       $('body').css("height","2000px");
+            $(window).scroll(function(){
+                var topo = $(window).scrollTop();
+                if(topo > 350){
+                    $('#apresentacao ').fadeIn('1000');
+                    }else{
+                    $('#apresentacao').fadeOut('4000');   
+                }
+                if(topo > 500){
+                    $('.containers').fadeIn('1000');
+                    }else{
+                    $('.containers').fadeOut('4000');
+                    
+                }
+            });
+
+            var $doc = $('html, body');
+                  $('.scrollSuave').click(function() {
+            $doc.animate({
+                   scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 700);
+                  return false;
+
+});
+
+
+});
+
+  
+  
+  </script>
+  <body>
+
+
+<!-- apresntacao nome-->
+
+<!-- topo-->
+<div id="topo">
+    <div><a href="index.html" class="bloco">Inicio</a></div>
+    <div><a href="#curriculo" class="bloco scrollSuave">currículo</a></div>
+    <div><a href="#curriculo" class="bloco scrollSuave">Portfolio</a></div>
+    
+  </div>
+  
+  
+    <div id="principal">
+        <span id="nome"> OI, EU SOU O SONG SHIK</span><br>
+        <span id="descricao">AQUI VC VAI VER UM POUCO DO QUE EU SEI</span>
+        
+    </div>
+
+<div id="conhecimentos">
+  <div id="apresentacao"> 
+    <span>ABAIXO VC PODERÁ VER ALGUMAS DAS MINHAS HABILIDADES </br> OU SE QUISER PODE VER MER MEU CURRICULO NO FORMATO CLASSICO MESMO.
+    </span>
+    </div>
+
+ 
+
+    <div class="container">
+<!-- linha 1-->
+      <div class="row">
+        <div class="col ">
+          <div class="containers teste">
+            <img src="../img/3.fw.png" class=" " alt="Imagem responsiva">
+              <a href="curriculo.html" id="curriculo">
+                <div class="overlay">
+                  <div class="text">Meu currículo Simples e pratico</div> 
+                </div>
+              </a>
+          </div>
+        </div>
+        <div class="col ">
+          <div class="containers teste">
+            <img src="../img/conhecimentos/html.fw.png" class=" " alt="Imagem responsiva">
+                <div class="overlay">
+                  <div class="text">Html  e Css </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ">
+          <div class="containers teste">
+            <img src="../img/conhecimentos/javaSript.fw.png" class=" " alt="Imagem responsiva">
+                <div class="overlay">
+                  <div class="text">javaScript</div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- linha 2-->
+<div id="separador"></div>
+      <div class="row">
+          <div class="col ">
+            <div class="containers teste">
+              <img src="../img/conhecimentos/angular.png" class=" " alt="Imagem responsiva">
+                <a href="leninja.com.br">
+                  <div class="overlay">
+                    <div class="text">Angular JS</div> 
+                  </div>
+                </a>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="containers teste">
+              <img src="../img/conhecimentos/bootstrap.fw.png" class=" " alt="Imagem responsiva">
+                  <div class="overlay">
+                    <div class="text">Bootstrap</div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="containers teste">
+              <img src="../img/conhecimentos/jquery.fw.png" class=" " alt="Imagem responsiva">
+                  <div class="overlay">
+                    <div class="text">Jquery</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- linha 3-->
+<div id="separador"></div>
+      <div class="row">
+          <div class="col ">
+            <div class="containers teste">
+              <img src="../img/conhecimentos/java.fw.png" class=" " alt="Imagem responsiva">
+                <a href="leninja.com.br">
+                  <div class="overlay">
+                    <div class="text">Java</div> 
+                  </div>
+                </a>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="containers teste">
+              <img src="../img/conhecimentos/python.fw.png" class=" " alt="Imagem responsiva">
+                  <div class="overlay">
+                    <div class="text">Python</div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="containers teste">
+              <img src="../img/conhecimentos/sqlserver.fw.png" class=" " alt="Imagem responsiva">
+                  <div class="overlay">
+                    <div class="text">SQL Server </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+    </div>
+
+</div>
+
+</body>
+</html>
